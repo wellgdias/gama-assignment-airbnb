@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+
+    <link rel="shortcut icon" type="image/png" href="src/assets/airbnb_icon.svg" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar__logo">
+            <img class="logo__image" src="src/assets/airbnb_logo.svg" alt="img">
+            <h1 class="logo__name">airbnb</h1>
+        </div>
+
+        <div class="topbar__filter">
+            <div class="filter__location">
+                <p class="location__name">Itu, Brasil</p>
+            </div>
+            <div class="filter__date">
+                15 de maio - 20 de maio
+            </div>
+            <div class="filter__guests">
+                2 hóspedes
+            </div>
+            <div class="filter__search">
+                <img src="src/assets/search_icon.svg" alt="">
+            </div>
+        </div>
+
+        <div class="topbar__menu">
+            <div class="menu__config">
+                <img class="config__image" src="src/assets/globe_icon.svg" alt="img">
+            </div>
+            <div class="menu__help">
+                Ajuda
+            </div>
+            <div class="menu__login">
+                Cadastrar-se
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="info">
+            <p class="info__places">Mais de 12 acomodações · 16 de mai. - 18 de mai. · 2 hóspedes</p>
+            <h2 class="info__local">Acomodações em Itu</h2>
+            <div class="info__filter">
+                <button class="filter__button">Flexibilidade de cancelamento</button>
+                <button class="filter__button">Tipo de lugar</button>
+                <button class="filter__button">Preço</button>
+                <button class="filter__button">Reserva Instantânea</button>
+                <button class="filter__button">Mais filtros</button>
+            </div>
+
+            <p>Verifique as restrições de viagem antes de fazer uma reserva.A saúde e a segurança das nossas comunidades
+                vêm sempre em primeiro lugar. Siga as orientações do governo e viaje apenas se for essencial.Saiba mais
+            </p>
+        </div>
+
+        <div id="places" class="places"></div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  top: 70px;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.topbar {
+  background: #ff7977;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: #ffffff;
+  padding: 5px 5%;
+  top: 0;
+  left: 0;
+}
+
+.topbar__logo {
+  display: flex;
+  align-items: center;
+  width: 34%;
+}
+
+.logo__image {
+  width: 40px;
+}
+
+.logo__name {
+  margin: 0 4px;
+  font-size: 30px;
+}
+
+.topbar__filter {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  height: 70%;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #6d6d6d;
+  font-weight: 700;
+  text-align: center;
+  padding: 4px;
+}
+
+.filter__location {
+  width: 20%;
+}
+
+.filter__date {
+  width: 40%;
+}
+
+.filter__guests {
+  width: 30%;
+}
+.filter__search {
+  width: 10%;
+}
+
+.topbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 34%;
+  padding: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.menu__config,
+.menu__help,
+.menu__login {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.config__image {
+  width: 25px;
+}
+
+.info {
+  margin-top: 90px;
+  padding: 10px;
+}
+
+.info__local{
+  color: #6d6d6d;
+}
+
+.info__filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter__button {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0 4px;
+  box-shadow: none;
+  border: 1px solid;
+  border-color: #dfdfdf;
+  font-size: 14px;
+  height: 30px;
+}
+
+.places {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 5px;
+  z-index: 0;
+}
+
+.place__details {
+  text-decoration: none;
+  color: #444;  
+  display: flex;
+  flex-direction: column;
+}
+
+.place__image {
+  display: flex;
+  height: 200px;
+}
+
+.place__photo {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.place__info{
+  height: 120px
+}
+
+.place__type,
+.place__name,
+.place__price,
+.place__total-price {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.place__name{
+  align-items: flex-start;
+  color: #6d6d6d;
+}
+
+.place__type,
+.place__total-price {
+  color: #7e7e7e;
+}
+
+
