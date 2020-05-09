@@ -7,6 +7,7 @@ Construir uma página similar a do [Airbnb](https://www.airbnb.com.br/) através
 ## To-do
 - [x] Implementar as opções básicas do desafio
 - [ ] Alterar API adicionando mais dados
+- [ ] Adicionar paginação nas acomodações
 - [ ] Adicionar funcionalidades no filtro principal (Localização/data)
 - [ ] Adicionar funcionalidades no filtro das acomodações
 - [ ] Implementar [Mapa](https://leafletjs.com/) com a localização das acomodações
