@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airbnb Clone</title>
+    <title>Airbnb Hiring Coders</title>
 
     <link rel="shortcut icon" type="image/png" href="src/assets/airbnb_icon.svg" />
     <link rel="stylesheet" href="src/css/style.css">
@@ -21,12 +21,12 @@
 
         <div class="topbar__filter">
             <div class="filter__location">
-                <p class="location__name">Itu, Brasil</p>
+                Itu, Brasil
             </div>
             <div class="filter__date">
                 15 de maio - 20 de maio
             </div>
-            <div class="filter__guests">
+            <div class="filter__guests">                
                 2 hóspedes
             </div>
             <div class="filter__search">
@@ -39,10 +39,10 @@
                 <img class="config__image" src="src/assets/globe_icon.svg" alt="img">
             </div>
             <div class="menu__help">
-                Ajuda
+                <a href="https://www.linkedin.com/in/wellgdias/" class="menu__link">LinkedIn</a>
             </div>
             <div class="menu__login">
-                Cadastrar-se
+                <a href="https://github.com/wellgdias/gama-assignment-airbnb" class="menu__link">GitHub</a>
             </div>
         </div>
     </header>
@@ -52,10 +52,10 @@
             <p class="info__places">Mais de 12 acomodações · 16 de mai. - 18 de mai. · 2 hóspedes</p>
             <h2 class="info__local">Acomodações em Itu</h2>
             <div class="info__filter">
-                <button class="filter__button">Flexibilidade de cancelamento</button>
-                <button class="filter__button">Tipo de lugar</button>
-                <button class="filter__button">Preço</button>
-                <button class="filter__button">Reserva Instantânea</button>
+                <button class="filter__button" onclick="filterPlaces('cancelBooking')">Flexibilidade de cancelamento</button>
+                <button class="filter__button" onclick="sortPlaces('property_type')">Tipo de lugar</button>
+                <button class="filter__button" onclick="sortPlaces('price')">Preço</button>
+                <button class="filter__button" onclick="filterPlaces('instantBooking')">Reserva Instantânea</button>
                 <button class="filter__button">Mais filtros</button>
             </div>
 
@@ -67,7 +67,7 @@
         <div id="places" class="places"></div>
     </section>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 

@@ -1,4 +1,4 @@
-const url = "https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72";
+const url = "https://api.jsonbin.io/b/5eb8061d47a2266b14760d60";
 const placesElement = document.querySelector("#places");
 let places = [];
 
@@ -17,6 +17,8 @@ function renderPlaces(places) {
 }
 
 function renderPlace(place) {
+  // mudar tamanho da imagem do json
+
   const article = document.createElement("article");
   article.className = "place__details";
   article.innerHTML = `
@@ -31,6 +33,41 @@ function renderPlace(place) {
     </div>
     `;
   placesElement.appendChild(article);
+}
+
+async function sortPlaces(sortBy) {
+  places = await getPlaces();
+  places.sort(compareValues(sortBy));
+  console.log(places);
+  renderPlaces(places);
+}
+
+function compareValues(key, order = "asc") {
+  return function innerSort(a, b) {
+    if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+      return 0;
+    }
+
+    const varA = typeof a[key] === "string" ? a[key].toUpperCase() : a[key];
+    const varB = typeof b[key] === "string" ? b[key].toUpperCase() : b[key];
+
+    let comparison = 0;
+    if (varA > varB) {
+      comparison = 1;
+    } else if (varA < varB) {
+      comparison = -1;
+    }
+    return order === "desc" ? comparison * -1 : comparison;
+  };
+}
+
+async function filterPlaces(filterBy) {
+  places = await getPlaces();
+
+  const placesfiltered = places.filter((place) => place[filterBy]); 
+  
+  console.log(placesfiltered);
+  renderPlaces(placesfiltered);
 }
 
 async function main() {
