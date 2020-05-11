@@ -12,6 +12,13 @@ Construir uma página similar a do [Airbnb](https://www.airbnb.com.br/) através
 - [x] Adicionar funcionalidades no filtro das acomodações
 - [ ] Implementar [Mapa](https://leafletjs.com/) com a localização das acomodações
 
+> **Preview:**
+>[Airbnb Hiring Coders](https://airbnb-hiring-coders.netlify.app/)
+
+![preview](https://user-images.githubusercontent.com/47192417/81577848-63578b00-9380-11ea-84d6-b3195ec6688d.png)
+
+
+
 
 
 
